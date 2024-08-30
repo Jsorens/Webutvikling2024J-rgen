@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="nb">
-  <!-- lang står får language, nb står for norsk bokmål -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forside</title>
+    <title>Om oss</title>
   </head>
-
   <body>
-    <header id="topp">
-      <h1>Tredje verdenskrig</h1>
+    <header>
+      <a href="index.html"><h1>TV</h1></a>
       <nav>
         <ul>
           <li>
@@ -18,16 +16,16 @@
           <!-- uordnet liste(UL) der rekkefolke ikke har no å si -->
           <li><a href="https://www.google.com" target="_blank">Google</a></li>
           <li><a href="sider/contact.html">Kontakt oss</a></li>
-          <li><a href="about.html">Om oss</a></li>
-          <li>
-            <!-- Vi lager snarvei til footern -->
-            <a href="#bunn">Snarvei til footer</a>
-          </li>
+          <li><a href="index.html">Om oss</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <!-- section 1 -->
+      <section>
+        <h2>Kontakt oss</h2>
+      </section>
       <section>
         <h2>Hvorfor startet krigen?</h2>
         <p>
@@ -45,7 +43,7 @@
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?"
         </p>
-        <a href="about.html#kult">Les mer om hvorfor krigen startet</a>
+        <a href="#">Les mer om hvorfor krigen startet</a>
       </section>
       <!-- section 2 -->
       <section>
@@ -63,30 +61,14 @@
           <a href="#">Les mer</a>
         </article>
         <!-- artikkel 3 -->
-        <article>
+        <article id="kult">
           <h3>Når sluttet krigen</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
           <a href="#">Les mer</a>
         </article>
       </section>
     </main>
-    <!-- Sideinfo -->
-    <aside>
-      <h4>Andre har også skrevet om krigen</h4>
-      <nav>
-        <ul>
-          <!-- liste over andre nettsider som har skrevet om tredje verdenskrig -->
-          <li><a href="https://www.vg.no" target="_blank">VG</a></li>
 
-          <li>
-            <a href="https://www.dagbladet.no" target="_blank">Dagbladet</a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-    <footer id="bunn">
-      <p>2024 Jørgen Sørensen</p>
-      <a href="#topp">Tilbake opp</a>
-    </footer>
+    <footer>2024 Jørgen Sørensen</footer>
   </body>
 </html>
