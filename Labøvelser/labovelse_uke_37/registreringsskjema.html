@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Regristreringsskjema</title>
+  </head>
+  <body>
+    <h1>Forside for oppgave 3</h1>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Hjem</a>
+          </li>
+          <li><a href="validering.html">Valideringoppgave</a></li>
+          <li><a href="sider/contact.html">Kontakt</a></li>
+          <li><a href="nettside_mal.html">Nettside Mal</a></li>
+          <li><a href="#footer">Shortcut til footer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Registrering</h2>
+        <form action="post">
+          <!-- Vi lager labels for navn -->
+          <label for="navn">navn</label>
+          <input
+            type="text"
+            name="navn"
+            placeholder="fornavn etternavn"
+            id="navn"
+            pattern="[A-Za-zæøåÆØÅ ]{2,}"
+            maxlength="50"
+            required
+          />
+
+          <!-- Vi lager labels for email -->
+          <label for="email">E-post</label>
+          <input
+            type="email"
+            name="E-post"
+            placeholder="brukernavn@hiof.no"
+            id="email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            maxlength="100"
+            required
+          />
+
+          <!-- Vi lager labels for passord -->
+          <label for="pwd">Passord</label>
+          <input
+            type="password"
+            name="pwd"
+            placeholder="Mitt_passord123"
+            id="pwd"
+            minlength="8"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            maxlength="100"
+            required
+          />
+          <!-- Vi lager labels for alder -->
+          <label for="alder">Alder</label>
+          <input
+            type="number"
+            id="alder"
+            name="alder"
+            min="18"
+            max="99"
+            required
+          />
+
+          <!-- Vi lager labels for bursdag -->
+          <label for="birthday">Fødselsdato</label>
+          <input type="date" name="birthday" id="birthday" required />
+
+          <!-- Vi lager labels for telefon -->
+          <label for="phone">Telefon</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            required
+          />
+          <!-- Vi lager labels for kjønn -->
+          <label>
+            Mann
+            <input type="radio" name="valg" required />
+          </label>
+
+          <label>
+            Dame
+            <input type="radio" name="valg" required />
+          </label>
+
+          <label>
+            Annet
+            <input type="radio" name="valg" required />
+          </label>
+
+          <!-- Vi lager labels for land -->
+          <label for="land">Land</label>
+          <select name="land" id="land" required>
+            <option value="">Velg et land</option>
+            <option value="norge">Norge</option>
+            <option value="sverige">Sverige</option>
+            <option value="danmark">Danmark</option>
+          </select>
+
+          <!--Vi lager checkbox for personvern-->
+          <label for="personvern">Personvern</label>
+          <input type="checkbox" name="personvern" id="personvern" required />
+
+          <input type="submit" value="Send melding" />
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>
+        Kontakt meg på epost:
+        <a href="mailto:jsorensen@hotmail.no">jsorensen@hotmail.no</a>
+      </p>
+      <h1>&copy; 2024 Jørgen Sørensen</h1>
+    </footer>
+  </body>
+</html>
