@@ -1,0 +1,32 @@
+
+main{
+    background-image: url('/CSSanimasjoner/supermario/sprites/bakgrunn.jpg');
+    background-size: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#supermario{
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    animation-name: runningMario;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+#gompa{
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+    animation-name: runningGompa;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
