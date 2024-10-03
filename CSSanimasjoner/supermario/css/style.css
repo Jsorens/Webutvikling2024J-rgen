@@ -1,7 +1,8 @@
 
 main{
-    background-image: url('/CSSanimasjoner/supermario/sprites/bakgrunn.jpg');
-    background-size: 500px;
+    background-image: url('../sprites/bakgrunn.jpg');
+    background-size: contain;
+    height: 500px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;

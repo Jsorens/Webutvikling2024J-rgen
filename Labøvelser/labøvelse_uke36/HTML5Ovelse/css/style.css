@@ -1,0 +1,76 @@
+/* HEADER ELEMENTER */
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+header{
+    background-image: url("images/header_image.png");
+    background-size: cover;
+    text-transform: uppercase;
+    padding: 2rem;
+    width: 100%;
+    min-height: 100px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header nav ul a{
+    color: aliceblue;
+}
+
+a:hover{
+    background-color: rgb(80, 112, 255);
+}
+
+
+
+
+/* MAIN ELEMENTER */
+
+main {
+    max-width: 70%;
+    min-width: 400px;
+}
+main section h2 {
+    width: 100%;
+}
+main section{
+    /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+main section article{
+    box-shadow: 6px 10px 30px 4px #dcdcdc;
+    border-radius: 4px;
+    padding: 1rem;
+    width: fit-content;
+}
+
+
+aside{
+    width: 30%;
+    min-width: 350px;
+    flex-basis: auto;
+    flex-direction: column;
+    display: flex;
+
+    /* box shadow */
+    box-shadow: 6px 10px 30px 4px #dcdcdc;
+    border-radius: 4px;
+}
+/* 
+FOOTER ELEMENTER */
+footer{
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(102, 141, 250) 5%, rgb(5, 5, 112));
+    width: 100%;
+    a{
+        color: white;
+    }
+}
