@@ -1,26 +1,56 @@
 html {
-    font-size: 18px;
+    font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet for å gi en standard baseline */
 }
 
 *{
     box-sizing: border-box;
 }
 
+h1{font-size: 2rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+p, a{font-size: 1rem;}
+
+#main-logo{
+    width: 100%; /* Logoen tar opp 100% av containerens bredde */
+    max-width: 250px; /* Maksimal bredde for logoen er satt til 250px */
+    display: block; /* Gjør logoen til et blokk-element */
+    margin: 0px auto; /* Sentrerer logoen horisontalt */
+}
+#grid-container{
+    /* vi lager en grid */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 2rem;
+}
+.banner{
+    /* vi bruker flex parametere */
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        max-width: 70%;
+    }
+}
 body{
     text-decoration: none;
     color: #232323;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex-space-b{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   gap: 1rem;
-   
+#global-header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
 }
 
-#links {
+
+img {
+    width: 100%; /* Bildet tar opp 100% av containerens bredde */
+    max-width: 400px; /* Maks bredde for bilder er satt til 400px */
+}
+
+.flex-menu {
     display: flex;
     gap: 1rem;
     list-style: none;
@@ -47,8 +77,10 @@ body{
     color: #000;
 } */
 
-.flex-space-b form{
-    position: relative;
+
+main{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 #main-logo{
     width: 100%;
@@ -56,12 +88,20 @@ body{
     margin: 0px auto;
     display: block;
 }
-
-main section.products img{
-    width: 150%;
-    max-width: 250px;
+.flex-space-b{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+ }
+.flex-space-b form{
+    position: relative;
 }
-
+.flex-space-b form label {
+    visibility: hidden; /* Skjuler etiketten fra visning, men beholder den for tilgjengelighet */
+    position: absolute; /* Plasserer etiketten absolutt for mer fleksibel layout */
+}
 .product-card{
     max-width: 400px;
     min-width: 200px;
@@ -70,7 +110,12 @@ main section.products img{
     border-radius: 4px;
     padding: 1rem;
 }
-.products h2{
+
+.flex-space-b h2{
     width: 100%;
 }
 
+footer{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
