@@ -12,6 +12,12 @@ h3{font-size: 1.6rem;}
 h4{font-size: 1.4rem;}
 p, a{font-size: 1rem;}
 
+body{
+    text-decoration: none;
+    color: #232323;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #main-logo{
     width: 100%; /* Logoen tar opp 100% av containerens bredde */
     max-width: 250px; /* Maksimal bredde for logoen er satt til 250px */
@@ -25,6 +31,11 @@ p, a{font-size: 1rem;}
     grid-template-rows: repeat(3, auto);
     row-gap: 2rem;
 }
+#global-header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
 .banner{
     /* vi bruker flex parametere */
     display: flex;
@@ -33,17 +44,12 @@ p, a{font-size: 1rem;}
         max-width: 70%;
     }
 }
-body{
-    text-decoration: none;
-    color: #232323;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-#global-header{
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-}
 
+main{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
 
 img {
     width: 100%; /* Bildet tar opp 100% av containerens bredde */
@@ -78,10 +84,7 @@ img {
 } */
 
 
-main{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
+
 #main-logo{
     width: 100%;
     max-width: 250px;
@@ -103,7 +106,7 @@ main{
     position: absolute; /* Plasserer etiketten absolutt for mer fleksibel layout */
 }
 .product-card{
-    max-width: 400px;
+    max-width: 350px;
     min-width: 200px;
     width: 100%;
     box-shadow: 6px 10px 30px 4px #bcbcbc;
