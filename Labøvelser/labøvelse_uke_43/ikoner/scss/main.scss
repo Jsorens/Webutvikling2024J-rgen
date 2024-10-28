@@ -1,0 +1,27 @@
+@use 'variables.scss' as *;
+@use 'mixins.scss';
+@use 'base.scss';
+
+
+*{
+    color: $primary-color;
+    font-family: $main-font;
+}
+header{
+    
+}
+main{
+    #news{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    
+}
+nav{
+    position: fixed;
+    ul{
+        list-style: none;
+    }
+}
